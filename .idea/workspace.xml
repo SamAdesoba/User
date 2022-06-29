@@ -4,21 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debc0d0a-a011-4ec1-ab98-53637fbade23" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/request/RegisterUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/responses/RegisterUserResponse.java" afterDir="false" />
+    <list default="true" id="debc0d0a-a011-4ec1-ab98-53637fbade23" name="Changes" comment="Update commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Exceptions/LogInException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/responses/LoginUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/request/LogInRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/request/RegisterUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/request/RegisterUserRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +103,35 @@
       <workItem from="1656008080704" duration="4542000" />
       <workItem from="1656078557247" duration="16000" />
       <workItem from="1656139090503" duration="22000" />
-      <workItem from="1656139132709" duration="5110000" />
+      <workItem from="1656139132709" duration="5887000" />
+      <workItem from="1656146954607" duration="163000" />
+      <workItem from="1656147307882" duration="1352000" />
+      <workItem from="1656149482592" duration="2124000" />
+      <workItem from="1656153419398" duration="304000" />
+      <workItem from="1656153799123" duration="364000" />
+      <workItem from="1656268320139" duration="315000" />
+      <workItem from="1656313971974" duration="71000" />
+      <workItem from="1656318594187" duration="481000" />
+      <workItem from="1656352353212" duration="125000" />
+      <workItem from="1656352539560" duration="101000" />
+      <workItem from="1656353072606" duration="303000" />
+      <workItem from="1656353520428" duration="8000" />
+      <workItem from="1656419753083" duration="3755000" />
+      <workItem from="1656429997287" duration="660000" />
+      <workItem from="1656430684114" duration="866000" />
+      <workItem from="1656439983459" duration="1059000" />
+      <workItem from="1656454679837" duration="109000" />
+      <workItem from="1656454900732" duration="1281000" />
+      <workItem from="1656456218416" duration="1014000" />
     </task>
+    <task id="LOCAL-00001" summary="Update commit">
+      <created>1656144291229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656144291229</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,5 +147,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update commit" />
   </component>
 </project>

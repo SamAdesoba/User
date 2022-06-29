@@ -2,8 +2,10 @@ package africa.semicolon.mogbo.Services;
 
 import africa.semicolon.mogbo.Data.Models.User;
 import africa.semicolon.mogbo.Data.Repository.UserRepository;
-import africa.semicolon.mogbo.dto.request.LoginRequest;
+import africa.semicolon.mogbo.Exceptions.LogInException;
+import africa.semicolon.mogbo.dto.request.LogInRequest;
 import africa.semicolon.mogbo.dto.request.RegisterUserRequest;
+import africa.semicolon.mogbo.dto.responses.LoginUserResponse;
 import africa.semicolon.mogbo.dto.responses.RegisterUserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,13 +33,14 @@ public class UserServiceImpl implements UserService{
 	}
 
 	@Override
-	public void login(LoginRequest loginRequest) {
-		User user = new User();
-		String givenPassword = loginRequest.getPassword();
-		String existingPassword = user.getPassword();
-		String loggedInUser = user.getId();
-		if (Objects.equals(existingPassword, givenPassword)) {
-			userRepository.findById(loggedInUser);
+	public LoginUserResponse login(LogInRequest loginRequest) {
+		User existing =  userRepository.findUserByEmail(loginRequest.getEmail()).
+				  orElseThrow(() -> new LogInException("User not found"));
+		LoginUserResponse response = new LoginUserResponse();
+		if(Objects.equals(existing.getPassword(), loginRequest.getPassword())){
+			response.setLoginMessage("Logged in successfully!!!");
+
 		}
+		return response;
 	}
 }
